@@ -1,7 +1,7 @@
 # MacOS
 
 ```
-docker build -t <name>
+docker build -t <name> .
 docker images
 docker run -d -p 5000:5000 <name>
 docker ps
