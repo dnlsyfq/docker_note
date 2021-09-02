@@ -1,6 +1,10 @@
 # MacOS
 
 ```
+docker --version
+```
+
+```
 docker build -t <name> .
 docker images
 docker run -d -p 5000:5000 <name>
@@ -29,3 +33,17 @@ RUN pip install -r requirements.txt
 # command to run on container start
 CMD [ "python", "app.py" ]
 ```
+
+# Linux distro
+
+```
+systemctl status docker
+systemctl stop docker
+systemctl start docker
+```
+
+* starting up
+```
+sudo dockerd
+```
+
