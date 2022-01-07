@@ -1,6 +1,8 @@
 # MacOS
 
 ```
+docker version
+docker info
 docker --version
 ```
 
