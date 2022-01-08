@@ -4,6 +4,7 @@
 docker version
 docker info
 docker --version
+docker-compose --version
 ```
 
 ```
@@ -13,6 +14,20 @@ docker run hello-world
 * see all available docker images
 ```
 docker images
+```
+
+* see docker running
+```
+docker ps
+```
+
+* find image in docker hub image
+```
+https://hub.docker.com/search?q=docker%20airflow&type=image&page=2
+https://hub.docker.com/r/puckel/docker-airflow
+docker pull puckel/docker-airflow
+docker run -d -p 8080:8080 puckel/docker-airflow webserver
+docker ps
 ```
 
 ```
