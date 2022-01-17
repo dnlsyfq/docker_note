@@ -73,3 +73,10 @@ systemctl start docker
 sudo dockerd
 ```
 
+# Mac with brew
+
+```
+
+```
+
+
