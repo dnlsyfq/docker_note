@@ -85,6 +85,28 @@ docker tag docker101tutorial dnlsfq/docker101tutorial
 docker push dnlsfq/dockertutorial
 ```
 
+### docker with download image 
+```
+search image at docker hub
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=<PASSWORD> -d mysql:Tag
+docker start some-mysql
+docker ps
+```
+
+```
+docker run -p 3307:3306 --name my-mysql -e MYSQL_ROOT_PASSWORD=<PASSWORD> -d mysql/mysql-server:5.7
+docker exec -it my-mysql /bin/bash
+
+mysql -uroot -p -P3307 -h127.0.0.1
+```
+
+```
+docker run -d --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=<PASSWORD> mysql:latest
+docker ps
+docker stop
+```
+
+### docker with build image
 ```
 docker image build -t dnlsfq/gsd:first-ctr . 
 docker image ls
@@ -97,3 +119,13 @@ docker container start web
 docker container rm web
 ```
 
+### docker with yml
+
+```
+docker-compose.yml
+docker-compose up
+```
+
+```
+docker-compose -f docker-compose-LocalExecutor.yml up -d
+```
