@@ -73,10 +73,27 @@ systemctl start docker
 sudo dockerd
 ```
 
-# Mac with brew
+# Windows
 
+```
+docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+docker cp repo:/git/getting-started/ .
+cd getting-started
+docker build -t docker101tutorial .
+docker run -d -p 80:80 --name docker-tutorial docker101tutorial
+docker tag docker101tutorial dnlsfq/docker101tutorial
+docker push dnlsfq/dockertutorial
 ```
 
 ```
-
+docker image build -t dnlsfq/gsd:first-ctr . 
+docker image ls
+docker image push dnlsfq/gsd:first-ctr
+docker image rm dnlsfq/gsd:first-ctr
+docker container run -d --name web -p 8000:8080 dnlsfq/gsd:first-ctr
+docker container ls
+docker container stop web
+docker container start web
+docker container rm web
+```
 
