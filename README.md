@@ -129,3 +129,62 @@ docker-compose up
 ```
 docker-compose -f docker-compose-LocalExecutor.yml up -d
 ```
+
+### docker ignore file
+file that dont want to include in the container
+
+.dockerignore
+```
+node_modules
+npm-debug.log
+```
+
+### docker file
+create an image based on instructions
+
+Dockerfile
+```
+```
+
+### docker create image
+
+```
+docker build -t <name> .
+docker build -t algofields/simple-backend .
+```
+### docker see all images
+
+```
+docker images
+```
+
+### docker delete images
+
+```
+docker rmi <4 char image id>
+```
+
+### docker run container from image 
+
+```
+docker run  -p <port number>:<port number> <image name>
+docker run -p 4000:4000 algofields/simple-backend
+```
+### docker see container
+
+```
+docker ps
+```
+
+### docker stop container
+
+```
+docker stop <docker container id>
+```
+
+### push image to docker hub
+
+```
+docker push 
+docker pull
+```
