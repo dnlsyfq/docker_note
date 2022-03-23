@@ -188,3 +188,13 @@ docker stop <docker container id>
 docker push 
 docker pull
 ```
+
+## docker compose
+manage multiple containers
+
+### create docker compose
+
+docker-compose.yml
+```
+
+```
