@@ -198,3 +198,9 @@ docker-compose.yml
 ```
 
 ```
+
+# docker file sharing
+windows 10 disable wsl2 option in docker
+```
+C:\Users\<name>\AppData\Roaming\Docker
+```
