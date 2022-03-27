@@ -8,6 +8,10 @@ docker-compose --version
 ```
 
 ```
+docker login
+```
+
+```
 docker run hello-world
 ```
 
@@ -162,6 +166,7 @@ docker images
 
 ```
 docker rmi <4 char image id>
+docker rmi <4 char image id>-f
 ```
 
 ### docker run container from image 
