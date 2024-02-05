@@ -35,6 +35,10 @@ docker ps
 ```
 
 ```
+docker run -it --rm -p 8888:8888 jupyter/datascience-notebook
+```
+
+```
 docker build -t <name> .
 docker images
 docker run -d -p 5000:5000 <name>
